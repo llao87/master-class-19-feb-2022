@@ -1,0 +1,311 @@
+#cnt {
+	position: relative;
+	width: 100%;
+	// max-width: 1050px;
+	max-width: 54.8vw;
+	margin: 0 auto;
+
+	.new-container {
+		position: relative;
+		font-size: 20px;
+		// font-size: 1.05vw;
+		font-family: "raleway";
+		font-weight: 600;
+		box-sizing: border-box;
+		line-height: 1;
+		margin: 0;
+		padding: 0;
+		color: $black;
+
+		@media screen and (max-width: 991px) {
+			font-size: 1vw;
+		}
+
+		& * {
+			position: relative;
+			font-family: "raleway";
+			font-weight: 600;
+			box-sizing: border-box;
+			line-height: 1;
+			margin: 0;
+			padding: 0;
+			color: $black;
+		}
+
+		.promo {
+			padding: 11.82em 0.324em 3.4em;
+
+			.city {
+				font-size: 2.154em;
+				letter-spacing: 0.01em;
+				margin: 0 0 0.35em 0;
+			}
+			.invite {
+				color: $wine;
+				text-transform: uppercase;
+				font-weight: 900;
+				font-size: 2.955em;
+				margin: 0 0 1.3em 0;
+			}
+
+			.theme {
+				.row {
+					&:nth-child(1) {
+						font-size: 3.63em;
+						text-transform: uppercase;
+						font-weight: 900;
+						letter-spacing: 0.005em;
+						margin: 0 0 0.1em 0;
+					}
+					&:nth-child(2) {
+						font-weight: 900;
+						text-transform: uppercase;
+						font-size: 3.023em;
+						margin: 0 0 0.1em 0;
+					}
+					&:nth-child(3) {
+						font-size: 2.2em;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+		.program {
+			padding: 3em 0.324em 4.2em;
+
+			.title {
+				color: $wine;
+				text-transform: uppercase;
+				font-size: 2.96em;
+				text-align: center;
+				font-weight: 900;
+				margin: 0 0 2em 0;
+
+				&::after, &::before {
+					position: absolute;
+					display: block;
+					content: '';
+					height: 2px;
+					background-color: $wine;
+					width: 8.9em;
+					z-index: -1;
+
+					top: 50%;
+					left: 0;
+					transform: translate(-72%, -0.1em);
+				}
+				&::after {
+					left: auto;
+					right: 0;
+					transform: translate(72%, -0.1em);
+				}
+			}
+
+			.program-lists {
+				display: flex;
+				align-items: flex-start;
+				justify-content: space-between;
+				padding: 0.4em 0 0 0;
+				
+				.program-list {
+					width: 45%;
+					border-left: 3px solid $wine;
+					padding: 0 0 0 0.8em;
+					list-style-type: none;
+
+					.program-item {
+						color: $white;
+						background-color: $wine;
+						font-size: 1.4em;
+						display: block;
+						padding: 0.75em 1em 0.75em 1.2em;
+						line-height: 1.1;
+						margin: 0 0 1.6em 0;
+					}
+
+					&:first-child {
+						margin: 0 0.4em 0 0.2em;
+
+						.program-item:nth-child(1) {
+							margin-bottom: 1.7em;
+						}
+						.program-item:nth-child(2) {
+							margin-bottom: 1.8em;
+						}
+						.program-item:nth-child(3) {
+							margin-bottom: 0;
+							padding-bottom: 1.1em;
+						}
+					}
+					&:last-child {
+						margin: 0 0 0 0.2em;
+
+						.program-item:nth-child(1) {
+							padding-left: 1.5em;
+							margin-bottom: 1.7em;
+						}
+						.program-item:nth-child(2) {
+							padding-left: 1.5em;
+							margin-bottom: 1.8em;
+							padding-bottom: 1.93em;
+						}
+						.program-item:nth-child(3) {
+							padding-left: 1.5em;
+							margin-bottom: 0;
+							padding-bottom: 1.4em;
+						}
+					}
+
+					
+				}
+			}
+		}
+
+		.profit {
+			padding: 3.4em 0 3.6em;
+
+			.title {
+				color: $wine;
+				text-transform: uppercase;
+				text-align: center;
+				font-size: 3em;
+				font-weight: 900;
+				padding: 0 2em;
+				line-height: 1.15;
+				letter-spacing: -0.009em;
+				margin: 0 0 1.4em 0;
+
+				&::after, &::before {
+					position: absolute;
+				    display: block;
+				    content: "";
+				    height: 2px;
+				    background-color: #974252;
+				    width: 2.25em;
+				    z-index: -1;
+				    top: 25%;
+				    left: 0;
+				    transform: translate(-32%, -0.1em);
+				}
+				&::after {
+					left: auto;
+					right: 0;
+					transform: translate(32%, -0.1em);
+				}
+			}
+			
+
+			.profit-list {
+				display: flex;
+			    align-items: stretch;
+			    justify-content: space-between;
+			    text-align: center;
+			    list-style-type: none;
+			    flex-wrap: wrap;
+		        padding: 0.4em 6.6em 0;
+		        margin: 0 0 0.4em 0;
+
+				.profit-item {
+					width: 30%;
+				    margin: 0 0 3.3em 0;
+
+					.profit-icon {
+						display: block;
+					    width: 6.5em;
+					    height: 6.5em;
+					    background-size: contain;
+					    background-repeat: no-repeat;
+					    background-position: center;
+					    margin: 0 auto;
+					}
+				}
+
+				.profit-item--actual {
+					.profit-icon {
+						background-image: url(../img/icon-actual.svg);
+					}
+				}
+				.profit-item--repair-skill {
+					.profit-icon {
+						background-image: url(../img/icon-repair-skill.svg);
+					}
+				}
+				.profit-item--present {
+					.profit-icon {
+						background-image: url(../img/icon-present.svg);
+					}
+					.profit-item-title {
+						padding: 1.2em 1.8em;
+					}
+				}
+				.profit-item--certificate {
+					.profit-icon {
+						background-image: url(../img/icon-certificate.svg);
+					}
+				}
+				.profit-item--consult {
+					.profit-icon {
+						background-image: url(../img/icon-consult.svg);
+					}
+					.profit-item-title {
+						padding: 1.2em 1.4em;
+					}
+				}
+				.profit-item--model {
+					.profit-icon {
+						background-image: url(../img/icon-model.svg);
+					}
+				}
+				.profit-item-title {
+					padding: 1.2em 1em;
+				    display: block;
+				    line-height: 1.1;
+				    letter-spacing: -0.015em;
+				}
+			}
+			.attention {
+				color: $wine;
+			    text-align: center;
+			    font-size: 1.3em;
+			    letter-spacing: 0.03em;
+			    padding: 0 0 0 0.9em;
+			}
+		}
+
+		.sign-up {
+			.title {}
+
+			.sign-up-form {
+				.field-box {
+					.field {}
+				}
+
+				.submit-box {
+					.submit {}
+				}
+			}
+		}
+
+		.information {
+			.teacher {
+				h2.title {}
+				.name {}
+
+				.grades {
+					.grade {}
+				}
+			}
+
+			.prices {
+				.title {}
+
+				.rates {
+					.rate {
+						.cost {}
+						.description {}
+					}
+				}
+			}
+		}
+	}
+}

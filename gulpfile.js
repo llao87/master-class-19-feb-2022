@@ -23,9 +23,10 @@ gulp.task('clean', async function() {
 
 gulp.task('scss', async function() {
     return gulp.src('src/scss/**/*.scss')
-        .pipe(sass({ outputStyle: 'compressed' }))
+        // .pipe(sass({ outputStyle: 'compressed' }))
+        .pipe(sass({ outputStyle: 'expanded' }))
         .pipe(autoprefixer({
-            overrideBrowserslist: ['last 8 versions']
+            overrideBrowserslist: ['last 3 versions']
         }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('src/css'))

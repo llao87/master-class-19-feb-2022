@@ -12,6 +12,112 @@ html(lang="ru")
 			href="css/style.min.css"
 		)
 	body
-		include ../pug-parts/header/header.pug
+		#cnt
+			.new-container
+				section.promo
+					.city Москва
+					.invite Приглашаем на мастер-класс
 
-		include ../pug-parts/footer/footer.pug
+					.theme
+						.row Изготовление съемных
+						.row Конструкций из полиамида
+						.row На примере материала Perflex Biosense
+
+				section.program
+					.title Программа курса
+
+					.program-lists
+						ul.program-list
+							li.program-item Выбор инструментов для обработки и полировки
+							li.program-item Особенности изготовления съемных конструкций из полиамида на примере термопластичных материалов
+							li.program-item Точный расчет необходимого количества материалов
+
+						ul.program-list
+							li.program-item Виды и возможности перебазировки
+							li.program-item Разбор ошибок при изготовлении конструкций из термопластичных материалов 
+							li.program-item Починки и поломки. Границы протеза
+
+
+				section.profit
+					h2.title Посетив мастер-класс вы получаете
+
+					ul.profit-list
+						li.profit-item.profit-item--actual
+							span.profit-icon
+							span.profit-item-title Актуальные знания по вопросам протезирования
+						
+						li.profit-item.profit-item--repair-skill
+							span.profit-icon
+							span.profit-item-title Навыки починки зубных протезов
+						
+						li.profit-item.profit-item--present
+							span.profit-icon
+							span.profit-item-title Материал Perflex в подарок
+						
+						li.profit-item.profit-item--certificate
+							span.profit-icon
+							span.profit-item-title Именной сертификат
+						
+						li.profit-item.profit-item--consult
+							span.profit-icon
+							span.profit-item-title Консультацию и ответы на вопросы
+						
+						li.profit-item.profit-item--model
+							span.profit-icon
+							span.profit-item-title Готовую модель зубного протеза
+
+					.attention Количество участников ограничено!
+
+
+				section.sign-up
+					h2.title Записаться на мастер-класс
+
+					form.sign-up-form(
+						method="POST"
+						action="#"
+						)
+						.field-box
+							input.field(
+								type="text"
+								placeholder="ФИО *"
+								)
+						.field-box
+							input.field(
+								type="text"
+								placeholder="Ваш номер телефона *"
+								)
+						.field-box
+							input.field(
+								type="text"
+								placeholder="Введите символы с картинки *"
+								)
+
+						.submit-box
+							input.submit(
+								type="submit"
+								value="Записаться"
+								)
+
+				section.information
+					.teacher
+						h2.title Мастер-класс проводит
+						.name Александрова Жанна Олеговна
+
+						ul.grades
+							li.grade Эксперт по термопластичным материалам
+							li.grade Сертифицированный консультант компании ООО «Перфлекс Рус»
+							li.grade Действующий зубной техник со стажем работы и опытом обучения более 27 лет
+
+					.prices
+						h2.title Стоимость курса
+
+						ul.rates
+							li.rate
+								span.cost 5000 р.
+								span.description Для слушателей
+							li.rate
+								span.cost 8000 р.
+								span.description Для участников
+							li.rate
+								span.cost 10000 р.
+								span.description Для организаций
