@@ -11,113 +11,197 @@ html(lang="ru")
 			rel="stylesheet",
 			href="css/style.min.css"
 		)
+		script(src='/js/libs.min.js')
+		script(src='/js/main.js')
 	body
 		#cnt
-			.new-container
-				section.promo
-					.city Москва
-					.invite Приглашаем на мастер-класс
+			.page-content
+				.new-container
+					section.promo
+						.datatime
+							.city.wow.animate__animated.animate__fadeInDown 19 февраля,
+								span.time 10:00
+							.city.wow.animate__animated.animate__fadeInDown Москва
+							
+						.invite.wow.animate__animated.animate__fadeInDown Приглашаем на мастер-класс
 
-					.theme
-						.row Изготовление съемных
-						.row Конструкций из полиамида
-						.row На примере материала Perflex Biosense
+						.theme.wow.animate__animated.animate__fadeInUp
+							.row Изготовление съемных
+							.row Конструкций из полиамида
+							.row На примере материала Perflex Biosense
 
-				section.program
-					.title Программа курса
+						.toNextBlock.wow.animate__animated.animate__bounce.animate__slow
 
-					.program-lists
-						ul.program-list
-							li.program-item Выбор инструментов для обработки и полировки
-							li.program-item Особенности изготовления съемных конструкций из полиамида на примере термопластичных материалов
-							li.program-item Точный расчет необходимого количества материалов
+					section.program
+						.title Программа курса
 
-						ul.program-list
-							li.program-item Виды и возможности перебазировки
-							li.program-item Разбор ошибок при изготовлении конструкций из термопластичных материалов 
-							li.program-item Починки и поломки. Границы протеза
+						.program-lists
+							ul.program-list
+								li.program-item.wow.animate__animated.animate__fadeInLeft(data-wow-delay="1s") Выбор инструментов для обработки и полировки
+								li.program-item.wow.animate__animated.animate__fadeInLeft(data-wow-delay="1.5s") Особенности изготовления съемных конструкций из полиамида на примере термопластичных материалов
+								li.program-item.wow.animate__animated.animate__fadeInLeft(data-wow-delay="2s") Точный расчет необходимого количества материалов
+								span.border.wow.animate__animated.animate__fadeInUp
+							ul.program-list
+								li.program-item.wow.animate__animated.animate__fadeInLeft(data-wow-delay="1s") Виды и возможности перебазировки
+								li.program-item.wow.animate__animated.animate__fadeInLeft(data-wow-delay="1.5s") Разбор ошибок при изготовлении конструкций из термопластичных материалов 
+								li.program-item.wow.animate__animated.animate__fadeInLeft(data-wow-delay="2s") Починки и поломки. Границы протеза
+								span.border.wow.animate__animated.animate__fadeInUp
 
+					section.profit
+						h2.title Посетив мастер-класс вы получаете
 
-				section.profit
-					h2.title Посетив мастер-класс вы получаете
-
-					ul.profit-list
-						li.profit-item.profit-item--actual
-							span.profit-icon
-							span.profit-item-title Актуальные знания по вопросам протезирования
-						
-						li.profit-item.profit-item--repair-skill
-							span.profit-icon
-							span.profit-item-title Навыки починки зубных протезов
-						
-						li.profit-item.profit-item--present
-							span.profit-icon
-							span.profit-item-title Материал Perflex в подарок
-						
-						li.profit-item.profit-item--certificate
-							span.profit-icon
-							span.profit-item-title Именной сертификат
-						
-						li.profit-item.profit-item--consult
-							span.profit-icon
-							span.profit-item-title Консультацию и ответы на вопросы
-						
-						li.profit-item.profit-item--model
-							span.profit-icon
-							span.profit-item-title Готовую модель зубного протеза
-
-					.attention Количество участников ограничено!
-
+						ul.profit-list
+							li.profit-item.profit-item--actual
+								span.profit-icon.button.hvr-pulse-grow
+								span.profit-item-title Актуальные знания по вопросам протезирования
+							
+							li.profit-item.profit-item--repair-skill
+								span.profit-icon.button.hvr-pulse-grow
+								span.profit-item-title Навыки починки зубных протезов
+							
+							li.profit-item.profit-item--present
+								span.profit-icon.button.hvr-pulse-grow
+								span.profit-item-title Материал Perflex в подарок
+							
+							li.profit-item.profit-item--certificate
+								span.profit-icon.button.hvr-pulse-grow
+								span.profit-item-title Именной сертификат
+							
+							li.profit-item.profit-item--consult
+								span.profit-icon.button.hvr-pulse-grow
+								span.profit-item-title Консультацию и ответы на вопросы
+							
+							li.profit-item.profit-item--model
+								span.profit-icon.button.hvr-pulse-grow
+								span.profit-item-title Готовую модель зубного протеза
 
 				section.sign-up
-					h2.title Записаться на мастер-класс
+					// h2.title Записаться на мастер-класс
 
-					form.sign-up-form(
-						method="POST"
-						action="#"
-						)
-						.field-box
-							input.field(
-								type="text"
-								placeholder="ФИО *"
+					section.information
+						.teacher
+							.name Александрова<br>Жанна Олеговна
+							.present-text Ведущий мастер-класса
+
+							ul.grades
+								li.grade Эксперт по термопластичным материалам
+								li.grade Сертифицированный консультант компании ООО «Перфлекс Рус»
+								li.grade Действующий зубной техник со стажем работы и опытом обучения более 27 лет
+
+						.prices
+							.rates-title Стоимость курса
+
+							ul.rates
+								li.rate
+									span.cost 5000 р.
+									span.description Для слушателей
+								li.rate
+									span.cost 8000 р.
+									span.description Для участников
+								li.rate
+									span.cost 10000 р.
+									span.description Для организаций
+
+					section.form
+						form.sign-up-form(
+							method="POST"
+							action="#"
+							)
+							.form-offer Записаться на мастер-класс
+							.form-title Количество участников ограничено!
+							.input(
+								type="hidden"
+								name="study-type"
+							)
+							.fields
+								.field-box
+									input.field(
+										type="text"
+										placeholder="ФИО *"
+									)
+								.field-box
+									input.field(
+										type="text"
+										placeholder="Ваш номер телефона *"
+									)
+								.field-box
+									input.field(
+										type="text"
+										placeholder="Введите символы с картинки *"
+									)
+
+								.submit-box
+									input.submit(
+										type="submit"
+										value="Записаться"
+									)
+							.address
+								span ул. Огородный проезд, 20, стр. 4
+								span м. улица Милашенкова, Фонвизинская, Бутырская
+
+				section.sign-up2
+					// h2.title Записаться на мастер-класс
+
+					section.information
+						.teacher
+							.name Александрова<br>Жанна Олеговна
+							.present-text Мастер-класс проводит
+							// .present-text Ведущий мастер-класса
+
+							ul.grades
+								li.grade Эксперт по термопластичным материалам
+								li.grade Сертифицированный консультант компании ООО «Перфлекс Рус»
+								li.grade Действующий зубной техник со стажем работы и опытом обучения более 27 лет
+
+						.prices
+							// .rates-title Стоимость курса
+							.rates-title Выбрать курс
+
+							ul.rates
+								li.rate
+									span.cost 5000 р.
+									span.description Для слушателей
+								li.rate
+									span.cost 8000 р.
+									span.description Для участников
+								li.rate
+									span.cost 10000 р.
+									span.description Для организаций
+
+					section.form
+						.new-container
+							form.sign-up-form(
+								method="POST"
+								action="#"
 								)
-						.field-box
-							input.field(
-								type="text"
-								placeholder="Ваш номер телефона *"
+								.form-offer Записаться на мастер-класс
+								.form-title Количество участников ограничено!
+								.input(
+									type="hidden"
+									name="study-type"
 								)
-						.field-box
-							input.field(
-								type="text"
-								placeholder="Введите символы с картинки *"
-								)
+								.fields
+									.field-box
+										input.field(
+											type="text"
+											placeholder="ФИО *"
+										)
+									.field-box
+										input.field(
+											type="text"
+											placeholder="Ваш номер телефона *"
+										)
+									.field-box
+										input.field(
+											type="text"
+											placeholder="Введите символы с картинки *"
+										)
 
-						.submit-box
-							input.submit(
-								type="submit"
-								value="Записаться"
-								)
-
-				section.information
-					.teacher
-						h2.title Мастер-класс проводит
-						.name Александрова Жанна Олеговна
-
-						ul.grades
-							li.grade Эксперт по термопластичным материалам
-							li.grade Сертифицированный консультант компании ООО «Перфлекс Рус»
-							li.grade Действующий зубной техник со стажем работы и опытом обучения более 27 лет
-
-					.prices
-						h2.title Стоимость курса
-
-						ul.rates
-							li.rate
-								span.cost 5000 р.
-								span.description Для слушателей
-							li.rate
-								span.cost 8000 р.
-								span.description Для участников
-							li.rate
-								span.cost 10000 р.
-								span.description Для организаций
+									.submit-box
+										input.submit(
+											type="submit"
+											value="Записаться"
+										)
+								.address
+									span ул. Огородный проезд, 20, стр. 4
+									span м. улица Милашенкова, Фонвизинская, Бутырская
