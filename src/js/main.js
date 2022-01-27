@@ -24,4 +24,24 @@ $(document).ready(function(){
 
 		return false;
 	})
+
+
+	$(document).mouseup( function(e){ // событие клика по веб-документу
+		var div = $( "#popup" ); // тут указываем ID элемента
+		if ( !div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0 ) { // и не по его дочерним элементам
+			div.hide(); // скрываем его
+		}
+	});
+
+
+	// пропадание и появление плейсхолдера при фокусировке и расфокусировке на инпуте
+	jQuery('.field').focus(function(e) {
+		jQuery(this).attr('placeholder', '');
+	})
+
+
+	jQuery('.field').blur(function(e) {
+		jQuery(this).attr('placeholder', jQuery(this).data('placeholder'));
+	})
 });

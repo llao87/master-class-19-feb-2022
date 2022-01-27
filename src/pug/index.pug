@@ -16,6 +16,13 @@ html(lang="ru")
 	body
 		#cnt
 			.page-content
+				.page-nav
+					.new-container
+						.tabs
+							a.tab(href="#") Обучение
+							a.tab(href="#") Индивидуальное обучение
+							a.tab.active(href="#") Мастер-класс
+
 				.new-container
 					section.promo
 						.datatime
@@ -48,40 +55,40 @@ html(lang="ru")
 								span.border.wow.animate__animated.animate__fadeInUp
 
 					section.profit
-						h2.title Посетив мастер-класс вы получаете
+						h2.title Посетив мастер-класс<br>вы получаете
 
 						ul.profit-list
 							li.profit-item.profit-item--actual
 								span.profit-icon.button.hvr-pulse-grow
-								span.profit-item-title Актуальные знания по вопросам протезирования
-							
-							li.profit-item.profit-item--repair-skill
+								span.profit-item-title Актуальные знания<br>по вопросам<br>протезирования
+
+							li.profit-item.profit-item--consult
 								span.profit-icon.button.hvr-pulse-grow
-								span.profit-item-title Навыки починки зубных протезов
+								span.profit-item-title Консультацию и<br>ответы на<br>вопросы
 							
 							li.profit-item.profit-item--present
 								span.profit-icon.button.hvr-pulse-grow
-								span.profit-item-title Материал Perflex в подарок
+								span.profit-item-title Материал<br>Perflex в<br>подарок
 							
 							li.profit-item.profit-item--certificate
 								span.profit-icon.button.hvr-pulse-grow
-								span.profit-item-title Именной сертификат
+								span.profit-item-title Именной<br>сертификат
 							
-							li.profit-item.profit-item--consult
+							li.profit-item.profit-item--repair-skill
 								span.profit-icon.button.hvr-pulse-grow
-								span.profit-item-title Консультацию и ответы на вопросы
+								span.profit-item-title Навыки починки<br>зубных протезов
 							
 							li.profit-item.profit-item--model
 								span.profit-icon.button.hvr-pulse-grow
-								span.profit-item-title Готовую модель зубного протеза
+								span.profit-item-title Готовую модель<br>зубного протеза
 
 				section.sign-up
 					// h2.title Записаться на мастер-класс
 
 					section.information
 						.teacher
-							.name Александрова<br>Жанна Олеговна
 							.present-text Ведущий мастер-класса
+							.name Александрова<br>Жанна Олеговна
 
 							ul.grades
 								li.grade Эксперт по термопластичным материалам
@@ -117,17 +124,20 @@ html(lang="ru")
 								.field-box
 									input.field(
 										type="text"
-										placeholder="ФИО *"
+										placeholder="Имя *"
+										data-placeholder="Имя *"
 									)
 								.field-box
 									input.field(
 										type="text"
 										placeholder="Ваш номер телефона *"
+										data-placeholder="Ваш номер телефона *"
 									)
 								.field-box
 									input.field(
 										type="text"
 										placeholder="Введите символы с картинки *"
+										data-placeholder="Введите символы с картинки *"
 									)
 
 								.submit-box
@@ -138,70 +148,3 @@ html(lang="ru")
 							.address
 								span ул. Огородный проезд, 20, стр. 4
 								span м. улица Милашенкова, Фонвизинская, Бутырская
-
-				section.sign-up2
-					// h2.title Записаться на мастер-класс
-
-					section.information
-						.teacher
-							.name Александрова<br>Жанна Олеговна
-							.present-text Мастер-класс проводит
-							// .present-text Ведущий мастер-класса
-
-							ul.grades
-								li.grade Эксперт по термопластичным материалам
-								li.grade Сертифицированный консультант компании ООО «Перфлекс Рус»
-								li.grade Действующий зубной техник со стажем работы и опытом обучения более 27 лет
-
-						.prices
-							// .rates-title Стоимость курса
-							.rates-title Выбрать курс
-
-							ul.rates
-								li.rate
-									span.cost 5000 р.
-									span.description Для слушателей
-								li.rate
-									span.cost 8000 р.
-									span.description Для участников
-								li.rate
-									span.cost 10000 р.
-									span.description Для организаций
-
-					section.form
-						.new-container
-							form.sign-up-form(
-								method="POST"
-								action="#"
-								)
-								.form-offer Записаться на мастер-класс
-								.form-title Количество участников ограничено!
-								.input(
-									type="hidden"
-									name="study-type"
-								)
-								.fields
-									.field-box
-										input.field(
-											type="text"
-											placeholder="ФИО *"
-										)
-									.field-box
-										input.field(
-											type="text"
-											placeholder="Ваш номер телефона *"
-										)
-									.field-box
-										input.field(
-											type="text"
-											placeholder="Введите символы с картинки *"
-										)
-
-									.submit-box
-										input.submit(
-											type="submit"
-											value="Записаться"
-										)
-								.address
-									span ул. Огородный проезд, 20, стр. 4
-									span м. улица Милашенкова, Фонвизинская, Бутырская
