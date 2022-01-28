@@ -96,17 +96,17 @@
 				padding: 2.1em 0.324em 0.4em;
 
 				&::before {
-					display: block;
-					position: absolute;
-					content: "";
-					background-position: center;
-					background-size: contain;
-					background-repeat: no-repeat;
-					background-image: url(../img/float-img-top.png);
-					width: 40em;
-					height: 42em;
-					top: -7.3em;
-					left: -32.4em;
+				    display: block;
+				    position: absolute;
+				    content: "";
+				    background-position: center;
+				    background-size: contain;
+				    background-repeat: no-repeat;
+				    background-image: url(../img/float-img-top.png);
+				    width: 22em;
+				    height: 42em;
+				    top: -8.8em;
+				    left: -21.5em;
 				}
 
 				.datatime {
@@ -340,18 +340,18 @@
 				padding: 3.05em 0 0;
 
 				&::after {
-					width: 24em;
-					display: block;
-					position: absolute;
-					content: "";
-					background-position: center;
-					background-size: cover;
-					background-repeat: no-repeat;
-					background-image: url(../img/float-img-bottom.png);
-					height: 45em;
-					right: -22em;
-					top: -9em;
-					z-index: 0;
+				    width: 25em;
+				    display: block;
+				    position: absolute;
+				    content: "";
+				    background-position: center;
+				    background-size: cover;
+				    background-repeat: no-repeat;
+				    background-image: url(../img/float-img-bottom.png);
+				    height: 47em;
+				    right: -21.2em;
+				    top: -5.1em;
+				    z-index: 0;
 				}
 
 				.title {
@@ -512,7 +512,7 @@
 			.information {
 				width: 100%;
 				position: relative;
-				background-image: url(../img/information-bg.jpg);
+				background-image: url(../img/bg-information.jpg);
 				background-position: 50% 50%;
 				background-size: contain;
 				background-repeat: no-repeat;
@@ -738,6 +738,7 @@
 						// padding-bottom: 0;
 
 						.swiper-slide {
+							position: relative;
 							background-position: center;
 							background-size: cover;
 							// width: 338px;
@@ -753,6 +754,23 @@
 								width: 100%;
 								height: 100%;
 							}
+
+							span.subtitle {
+								display: flex;
+								align-items: center;
+								justify-content: center; 
+								position: absolute;
+								color: $white;
+								background-color: rgba(0, 0, 0, 0.7);
+								width: 100%;
+								bottom: 0;
+								font-family: 'Raleway';
+								padding: 0.5em 1em;
+								min-height: 2em;
+								font-size: 1.497005em;
+								line-height: 1.2;
+								box-sizing: border-box;
+							}
 						}
 					}
 					.controls {
@@ -767,9 +785,9 @@
 						transform: translate(-50%, -0.5em);
 						z-index: 999;
 
-						.swiper-button-prev {
-						}
-						.swiper-button-next {
+						.swiper-button-prev, .swiper-button-next {
+							outline: none !important;
+							color: $dark;
 						}
 					}
 					.swiper-pagination {
@@ -786,8 +804,8 @@
 
 			section.form {
 				// width: 41.1%;
-				// background-image: url(../img/information-bg.jpg);
-				background-color: $brightGray;
+				background-image: url(../img/bg-form.jpg);
+				// background-color: $brightGray;
 				background-position: center right;
 				background-size: cover;
 				background-repeat: no-repeat;
@@ -797,7 +815,7 @@
 
 				width: 100%;
 				padding: 5em 0 3em 0;
-				padding: 7.5em 0 3em 0;
+				padding: 7.5em 0 2.4em 0;
 				height: auto;
 
 				.new-container {
