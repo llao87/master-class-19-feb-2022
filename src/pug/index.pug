@@ -29,7 +29,7 @@ html(lang="ru")
 							.city.wow.animate__animated.animate__fadeInDown 19 февраля,
 								span.time 10:00
 							.city.wow.animate__animated.animate__fadeInDown Москва
-							
+
 						.invite.wow.animate__animated.animate__fadeInDown Приглашаем на мастер-класс
 
 						.theme.wow.animate__animated.animate__fadeInUp
@@ -44,14 +44,14 @@ html(lang="ru")
 
 						.program-lists
 							ul.program-list
-								li.program-item.wow.animate__animated.animate__fadeInLeft(data-wow-delay="1s") Выбор инструментов для обработки и полировки
-								li.program-item.wow.animate__animated.animate__fadeInLeft(data-wow-delay="1.5s") Особенности изготовления съемных конструкций из полиамида на примере термопластичных материалов
-								li.program-item.wow.animate__animated.animate__fadeInLeft(data-wow-delay="2s") Точный расчет необходимого количества материалов
+								li.program-item.wow.animate__animated.animate__fadeInLeft(data-wow-delay="0.5s") Выбор инструментов для обработки и полировки
+								li.program-item.wow.animate__animated.animate__fadeInLeft(data-wow-delay="0.3s") Особенности изготовления съемных конструкций из полиамида на примере термопластичных материалов
+								li.program-item.wow.animate__animated.animate__fadeInLeft(data-wow-delay="0.6s") Точный расчет необходимого количества материалов
 								span.border.wow.animate__animated.animate__fadeInUp
 							ul.program-list
-								li.program-item.wow.animate__animated.animate__fadeInLeft(data-wow-delay="1s") Виды и возможности перебазировки
-								li.program-item.wow.animate__animated.animate__fadeInLeft(data-wow-delay="1.5s") Разбор ошибок при изготовлении конструкций из термопластичных материалов 
-								li.program-item.wow.animate__animated.animate__fadeInLeft(data-wow-delay="2s") Починки и поломки. Границы протеза
+								li.program-item.wow.animate__animated.animate__fadeInLeft(data-wow-delay="0.5s") Виды и возможности перебазировки
+								li.program-item.wow.animate__animated.animate__fadeInLeft(data-wow-delay="0.3s") Разбор ошибок при изготовлении конструкций из термопластичных материалов 
+								li.program-item.wow.animate__animated.animate__fadeInLeft(data-wow-delay="0.6s") Починки и поломки. Границы протеза
 								span.border.wow.animate__animated.animate__fadeInUp
 
 					section.profit
@@ -64,20 +64,20 @@ html(lang="ru")
 
 							li.profit-item.profit-item--consult
 								span.profit-icon.button.hvr-pulse-grow
-								span.profit-item-title Консультацию и<br>ответы на<br>вопросы
-							
+								span.profit-item-title Консультацию<br>и ответы на<br>вопросы
+
 							li.profit-item.profit-item--present
 								span.profit-icon.button.hvr-pulse-grow
 								span.profit-item-title Материал<br>Perflex в<br>подарок
-							
+
 							li.profit-item.profit-item--certificate
 								span.profit-icon.button.hvr-pulse-grow
 								span.profit-item-title Именной<br>сертификат
-							
+
 							li.profit-item.profit-item--repair-skill
 								span.profit-icon.button.hvr-pulse-grow
 								span.profit-item-title Навыки починки<br>зубных протезов
-							
+
 							li.profit-item.profit-item--model
 								span.profit-icon.button.hvr-pulse-grow
 								span.profit-item-title Готовую модель<br>зубного протеза
@@ -87,64 +87,94 @@ html(lang="ru")
 
 					section.information
 						.teacher
-							.present-text Ведущий мастер-класса
+							.present-text Мастер-класс проводит
 							.name Александрова<br>Жанна Олеговна
 
 							ul.grades
-								li.grade Эксперт по термопластичным материалам
-								li.grade Сертифицированный консультант компании ООО «Перфлекс Рус»
-								li.grade Действующий зубной техник со стажем работы и опытом обучения более 27 лет
+								li.grade Эксперт по <br>термопластичным <br>материалам
+								li.grade Сертифицированный <br>консультант компании <br>ООО «Перфлекс Рус»
+								li.grade Действующий зубной техник <br>со стажем работы и опытом <br>обучения более 27 лет
 
 						.prices
-							.rates-title Стоимость курса
+							.rates-title Стоимость участия
 
 							ul.rates
 								li.rate
-									span.cost 5000 р.
+									span.cost 5000 р
 									span.description Для слушателей
 								li.rate
-									span.cost 8000 р.
-									span.description Для участников
+									span.cost 8000 р
+									span.description Для практиков
 								li.rate
-									span.cost 10000 р.
+									span.cost 10000 р
 									span.description Для организаций
 
-					section.form
-						form.sign-up-form(
-							method="POST"
-							action="#"
-							)
-							.form-offer Записаться на мастер-класс
-							.form-title Количество участников ограничено!
-							.input(
-								type="hidden"
-								name="study-type"
-							)
-							.fields
-								.field-box
-									input.field(
-										type="text"
-										placeholder="Имя *"
-										data-placeholder="Имя *"
-									)
-								.field-box
-									input.field(
-										type="text"
-										placeholder="Ваш номер телефона *"
-										data-placeholder="Ваш номер телефона *"
-									)
-								.field-box
-									input.field(
-										type="text"
-										placeholder="Введите символы с картинки *"
-										data-placeholder="Введите символы с картинки *"
-									)
+					section.gallery
+						//- .new-container
+						.swiper-box
+							.swiper.mySwiper
+								.swiper-wrapper
+									.swiper-slide
+										img(src="https://swiperjs.com/demos/images/nature-1.jpg")
+									.swiper-slide
+										img(src="https://swiperjs.com/demos/images/nature-2.jpg")
+									.swiper-slide
+										img(src="https://swiperjs.com/demos/images/nature-3.jpg")
+									.swiper-slide
+										img(src="https://swiperjs.com/demos/images/nature-4.jpg")
+									.swiper-slide
+										img(src="https://swiperjs.com/demos/images/nature-5.jpg")
+									.swiper-slide
+										img(src="https://swiperjs.com/demos/images/nature-6.jpg")
+									.swiper-slide
+										img(src="https://swiperjs.com/demos/images/nature-7.jpg")
+									.swiper-slide
+										img(src="https://swiperjs.com/demos/images/nature-8.jpg")
+									.swiper-slide
+										img(src="https://swiperjs.com/demos/images/nature-9.jpg")
+							.controls
+								.swiper-button-prev
+								.swiper-button-next
+							.swiper-pagination
 
-								.submit-box
-									input.submit(
-										type="submit"
-										value="Записаться"
-									)
-							.address
-								span ул. Огородный проезд, 20, стр. 4
-								span м. улица Милашенкова, Фонвизинская, Бутырская
+					section.form
+						.new-container
+							form.sign-up-form(
+								method="POST"
+								action="#"
+								)
+								.form-offer Записаться на мастер-класс
+								.form-title Количество участников <br>ограничено!
+								.input(
+									type="hidden"
+									name="study-type"
+								)
+								.fields
+									.field-box
+										input.field(
+											type="text"
+											placeholder="Ваше имя *"
+											data-placeholder="Ваше имя *"
+										)
+									.field-box
+										input.field(
+											type="text"
+											placeholder="Ваш номер телефона *"
+											data-placeholder="Ваш номер телефона *"
+										)
+									.field-box
+										input.field(
+											type="text"
+											placeholder="Введите символы с картинки *"
+											data-placeholder="Введите символы с картинки *"
+										)
+
+									.submit-box
+										input.submit(
+											type="submit"
+											value="Записаться"
+										)
+								.address
+									span ул. Огородный проезд, 20, стр. 4
+									span м. улица Милашенкова, Фонвизинская, Бутырская
+									span.phone телефон: 8 (495) 780-60-80
