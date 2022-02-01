@@ -2,3 +2,18 @@
 @import "vars";
 @import "fonts";
 @import "main";
+
+
+
+.mob-hidden {
+	@media screen and (max-width: 700px) {
+		display: none !important;
+	}
+}
+.mob-show {
+	display: none !important;
+	
+	@media screen and (max-width: 700px) {
+		display: block !important;
+	}
+}

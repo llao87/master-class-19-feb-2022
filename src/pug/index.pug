@@ -11,8 +11,8 @@ html(lang="ru")
 			rel="stylesheet",
 			href="css/style.min.css"
 		)
-		script(src='/js/libs.min.js')
-		script(src='/js/main.js')
+		script(src='js/libs.min.js')
+		script(src='js/main.js')
 	body
 		#cnt
 			.page-content
@@ -23,8 +23,8 @@ html(lang="ru")
 							a.tab(href="#") Индивидуальное обучение
 							a.tab.active(href="#") Мастер-класс
 
-				.new-container
-					section.promo
+				section.promo
+					.new-container
 						.datatime
 							.city.wow.animate__animated.animate__fadeInDown 19 февраля,
 								span.time 10:00
@@ -39,6 +39,7 @@ html(lang="ru")
 
 						.toNextBlock.wow.animate__animated.animate__bounce.animate__slow
 
+				.new-container
 					section.program
 						.title Программа курса
 
@@ -95,7 +96,7 @@ html(lang="ru")
 								li.grade Сертифицированный <br>консультант компании <br>ООО «Перфлекс Рус»
 								li.grade Действующий зубной техник <br>со стажем работы и опытом <br>обучения более 27 лет
 
-						.prices
+						.prices.mob-hidden
 							.rates-title Стоимость участия
 
 							ul.rates
@@ -109,69 +110,90 @@ html(lang="ru")
 									span.cost 10000 р
 									span.description Для организаций
 
-					section.gallery
-						//- .new-container
-						.swiper-box
-							.swiper.mySwiper
-								.swiper-wrapper
-									.swiper-slide
-										img(src="https://swiperjs.com/demos/images/nature-1.jpg")
-										span.subtitle Мастер класс по пилингу, Москва 2012
-									.swiper-slide
-										img(src="https://swiperjs.com/demos/images/nature-2.jpg")
-										span.subtitle Мастер класс по пилингу, Москва 2012
-									.swiper-slide
-										img(src="https://swiperjs.com/demos/images/nature-3.jpg")
-										span.subtitle Мастер класс по пилингу, Москва 2012
-									.swiper-slide
-										img(src="https://swiperjs.com/demos/images/nature-4.jpg")
-										span.subtitle Мастер класс по пилингу, Москва 2012
-									.swiper-slide
-										img(src="https://swiperjs.com/demos/images/nature-5.jpg")
-										span.subtitle Мастер класс по пилингу, Москва 2012
-							.controls
-								.swiper-button-prev
-								.swiper-button-next
-							.swiper-pagination
+					div.gallery-form-wrapper
+						section.gallery
+							h2.title Прошедшие мастер-классы
 
-					section.form
-						.new-container
-							form.sign-up-form(
-								method="POST"
-								action="#"
-								)
-								.form-offer Записаться на мастер-класс
-								.form-title Количество участников <br>ограничено!
-								.input(
-									type="hidden"
-									name="study-type"
-								)
-								.fields
-									.field-box
-										input.field(
-											type="text"
-											placeholder="Ваше имя *"
-											data-placeholder="Ваше имя *"
-										)
-									.field-box
-										input.field(
-											type="text"
-											placeholder="Ваш номер телефона *"
-											data-placeholder="Ваш номер телефона *"
-										)
-									.field-box
-										input.field(
-											type="text"
-											placeholder="Введите символы с картинки *"
-											data-placeholder="Введите символы с картинки *"
-										)
+							.swiper-box
+								.swiper.mySwiper
+									.swiper-wrapper
+										a.swiper-slide(data-fancybox
+											data-caption='Москва, 25.09.2019'
+											href="img/master-class/moscow_25.09.2019.jpg")
+											img(src="img/master-class/moscow_25.09.2019.jpg")
+											span.subtitle Москва, 25.09.2019
+										a.swiper-slide(data-fancybox
+											data-caption='Москва, 24.04.2019'
+											href="img/master-class/moscow_24.04.2019.jpg")
+											img(src="img/master-class/moscow_24.04.2019.jpg")
+											span.subtitle Москва, 24.04.2019
+										a.swiper-slide(data-fancybox
+											data-caption='Новосибирск, 06.09.2019'
+											href="img/master-class/novosibirsk_06.09.2019.jpg")
+											img(src="img/master-class/novosibirsk_06.09.2019.jpg")
+											span.subtitle Новосибирск, 06.09.2019
+										a.swiper-slide(data-fancybox
+											data-caption='Самара, 30.03.2019'
+											href="img/master-class/samara_30.03.2019.jpg")
+											img(src="img/master-class/samara_30.03.2019.jpg")
+											span.subtitle Самара, 30.03.2019
+								.controls
+									.swiper-button-prev
+									.swiper-button-next
+								.swiper-pagination
 
-									.submit-box
-										input.submit(
-											type="submit"
-											value="Записаться"
-										)
-								.address
-									span метро Улица Милашенкова, Фонвизинская
-									span Огородный проезд, 20, стр. 4
-									span.phone телефон: 8 (495) 780-60-80
+						section.prices.mob-show
+							.rates-title Стоимость участия
+
+							ul.rates
+								li.rate
+									span.cost 5000 р
+									span.description Для слушателей
+								li.rate
+									span.cost 8000 р
+									span.description Для практиков
+								li.rate
+									span.cost 10000 р
+									span.description Для организаций
+
+						section.form#inviteForm
+							.new-container
+								form.sign-up-form(
+									method="POST"
+									action="#"
+									)
+									.form-offer Записаться на мастер-класс
+									.form-title Количество участников <br>ограничено!
+									.input(
+										type="hidden"
+										name="study-type"
+									)
+									.fields
+										.field-box
+											input.field(
+												type="text"
+												placeholder="Ваше имя *"
+												data-placeholder="Ваше имя *"
+											)
+										.field-box
+											input.field#js-phone-field(
+												type="text"
+												placeholder="Ваш номер телефона *"
+												data-placeholder="Ваш номер телефона *"
+											)
+										.field-box
+											input.field(
+												type="text"
+												placeholder="Введите символы с картинки *"
+												data-placeholder="Введите символы с картинки *"
+											)
+
+										.submit-box
+											input.submit(
+												type="submit"
+												value="Записаться"
+											)
+									.address
+										span м. Милашенкова, м. Фонвизинская
+										span Огородный проезд, 20, стр. 4, ЗТЛ &laquo;Синергия&raquo;
+										span.phone телефон: 8 (495) 780-60-80

@@ -37,13 +37,13 @@ jQuery(function () {
 				slidesPerView: 1,
 				spaceBetween: 0
 			},
-			// when window width is >= 991px
-			900: {
+			// when window width is >= 700px
+			700: {
 				slidesPerView: 2,
 				spaceBetween: 40
 			},
-			// when window width is >= 1600px
-			1600: {
+			// when window width is >= 991px
+			991: {
 				slidesPerView: 3,
 				spaceBetween: 40
 			}
@@ -73,4 +73,7 @@ jQuery(function () {
 	jQuery('.field').on('blur', function (e) {
 		jQuery(this).attr('placeholder', jQuery(this).data('placeholder'));
 	})
+
+	// Телефон в форме
+	jQuery("#js-phone-field").mask("+7 (999) 999-99-99");
 });

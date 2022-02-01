@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>title</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <script src="/js/libs.min.js"></script>
-    <script src="/js/main.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
   </head>
   <body>
     <div id="cnt">
@@ -16,8 +16,8 @@
             <div class="tabs"><a class="tab" href="#">Обучение</a><a class="tab" href="#">Индивидуальное обучение</a><a class="tab active" href="#">Мастер-класс</a></div>
           </div>
         </div>
-        <div class="new-container">
-          <section class="promo">
+        <section class="promo">
+          <div class="new-container">
             <div class="datatime">
               <div class="city wow animate__animated animate__fadeInDown">19 февраля,<span class="time">10:00</span></div>
               <div class="city wow animate__animated animate__fadeInDown">Москва</div>
@@ -29,7 +29,9 @@
               <div class="row">На примере материала Perflex Biosense</div>
             </div>
             <div class="toNextBlock wow animate__animated animate__bounce animate__slow"></div>
-          </section>
+          </div>
+        </section>
+        <div class="new-container">
           <section class="program">
             <div class="title">Программа курса</div>
             <div class="program-lists">
@@ -69,7 +71,7 @@
                 <li class="grade">Действующий зубной техник <br>со стажем работы и опытом <br>обучения более 27 лет</li>
               </ul>
             </div>
-            <div class="prices">
+            <div class="prices mob-hidden">
               <div class="rates-title">Стоимость участия</div>
               <ul class="rates">
                 <li class="rate"><span class="cost">5000 р</span><span class="description">Для слушателей</span></li>
@@ -78,48 +80,53 @@
               </ul>
             </div>
           </section>
-          <section class="gallery">
-            <div class="swiper-box">
-              <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="https://swiperjs.com/demos/images/nature-1.jpg"><span class="subtitle">Мастер класс по пилингу, Москва 2012</span></div>
-                  <div class="swiper-slide"><img src="https://swiperjs.com/demos/images/nature-2.jpg"><span class="subtitle">Мастер класс по пилингу, Москва 2012</span></div>
-                  <div class="swiper-slide"><img src="https://swiperjs.com/demos/images/nature-3.jpg"><span class="subtitle">Мастер класс по пилингу, Москва 2012</span></div>
-                  <div class="swiper-slide"><img src="https://swiperjs.com/demos/images/nature-4.jpg"><span class="subtitle">Мастер класс по пилингу, Москва 2012</span></div>
-                  <div class="swiper-slide"><img src="https://swiperjs.com/demos/images/nature-5.jpg"><span class="subtitle">Мастер класс по пилингу, Москва 2012</span></div>
+          <div class="gallery-form-wrapper">
+            <section class="gallery">
+              <h2 class="title">Прошедшие мастер-классы</h2>
+              <div class="swiper-box">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper"><a class="swiper-slide" data-fancybox data-caption="Москва, 25.09.2019" href="img/master-class/moscow_25.09.2019.jpg"><img src="img/master-class/moscow_25.09.2019.jpg"><span class="subtitle">Москва, 25.09.2019</span></a><a class="swiper-slide" data-fancybox data-caption="Москва, 24.04.2019" href="img/master-class/moscow_24.04.2019.jpg"><img src="img/master-class/moscow_24.04.2019.jpg"><span class="subtitle">Москва, 24.04.2019</span></a><a class="swiper-slide" data-fancybox data-caption="Новосибирск, 06.09.2019" href="img/master-class/novosibirsk_06.09.2019.jpg"><img src="img/master-class/novosibirsk_06.09.2019.jpg"><span class="subtitle">Новосибирск, 06.09.2019</span></a><a class="swiper-slide" data-fancybox data-caption="Самара, 30.03.2019" href="img/master-class/samara_30.03.2019.jpg"><img src="img/master-class/samara_30.03.2019.jpg"><span class="subtitle">Самара, 30.03.2019</span></a></div>
                 </div>
-              </div>
-              <div class="controls">
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </section>
-          <section class="form">
-            <div class="new-container">
-              <form class="sign-up-form" method="POST" action="#">
-                <div class="form-offer">Записаться на мастер-класс</div>
-                <div class="form-title">Количество участников <br>ограничено!</div>
-                <div class="input" type="hidden" name="study-type"></div>
-                <div class="fields">
-                  <div class="field-box">
-                    <input class="field" type="text" placeholder="Ваше имя *" data-placeholder="Ваше имя *">
-                  </div>
-                  <div class="field-box">
-                    <input class="field" type="text" placeholder="Ваш номер телефона *" data-placeholder="Ваш номер телефона *">
-                  </div>
-                  <div class="field-box">
-                    <input class="field" type="text" placeholder="Введите символы с картинки *" data-placeholder="Введите символы с картинки *">
-                  </div>
-                  <div class="submit-box">
-                    <input class="submit" type="submit" value="Записаться">
-                  </div>
+                <div class="controls">
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
                 </div>
-                <div class="address"><span>ул. Огородный проезд, 20, стр. 4</span><span>м. улица Милашенкова, Фонвизинская, Бутырская</span><span class="phone">телефон: 8 (495) 780-60-80</span></div>
-              </form>
-            </div>
-          </section>
+                <div class="swiper-pagination"></div>
+              </div>
+            </section>
+            <section class="prices mob-show">
+              <div class="rates-title">Стоимость участия</div>
+              <ul class="rates">
+                <li class="rate"><span class="cost">5000 р</span><span class="description">Для слушателей</span></li>
+                <li class="rate"><span class="cost">8000 р</span><span class="description">Для практиков</span></li>
+                <li class="rate"><span class="cost">10000 р</span><span class="description">Для организаций</span></li>
+              </ul>
+            </section>
+            <section class="form" id="inviteForm">
+              <div class="new-container">
+                <form class="sign-up-form" method="POST" action="#">
+                  <div class="form-offer">Записаться на мастер-класс</div>
+                  <div class="form-title">Количество участников <br>ограничено!</div>
+                  <div class="input" type="hidden" name="study-type"></div>
+                  <div class="fields">
+                    <div class="field-box">
+                      <input class="field" type="text" placeholder="Ваше имя *" data-placeholder="Ваше имя *">
+                    </div>
+                    <div class="field-box">
+                      <input class="field" id="js-phone-field" type="text" placeholder="Ваш номер телефона *" data-placeholder="Ваш номер телефона *">
+                    </div>
+                    <div class="field-box">
+                      <input class="field" type="text" placeholder="Введите символы с картинки *" data-placeholder="Введите символы с картинки *">
+                    </div>
+                    <div class="submit-box">
+                      <input class="submit" type="submit" value="Записаться">
+                    </div>
+                  </div>
+                  <div class="address"><span>м. Милашенкова, м. Фонвизинская</span><span>Огородный проезд, 20, стр. 4, ЗТЛ &laquo;Синергия&raquo;</span><span class="phone">телефон: 8 (495) 780-60-80</span></div>
+                </form>
+              </div>
+            </section>
+          </div>
         </section>
       </div>
     </div>
